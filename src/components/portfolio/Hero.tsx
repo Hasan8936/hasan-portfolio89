@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, MessageCircle, Sparkles } from "lucide-react";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -14,42 +14,70 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 py-20 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
-          {/* Profile Image */}
+          {/* Profile Image - Bigger and with talking animation */}
           <div className="mb-8 relative">
-            <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-primary shadow-2xl animate-pulse">
+            <div className="w-48 h-48 mx-auto rounded-full overflow-hidden border-6 border-primary shadow-2xl animate-talk-bounce relative">
               <img 
                 src="/lovable-uploads/e12f37b7-cd1c-4e62-8e0f-20cae018c2dc.png" 
                 alt="Nusaibul Hasan"
                 className="w-full h-full object-cover"
               />
+              
+              {/* Speech indicator overlay */}
+              <div className="absolute inset-0 bg-primary/10 rounded-full animate-speech-pulse"></div>
             </div>
-            <div className="absolute -inset-4 bg-primary-gradient rounded-full opacity-20 blur-2xl -z-10 animate-pulse" />
             
-            {/* Animated Code Elements */}
+            {/* Enhanced background glow */}
+            <div className="absolute -inset-8 bg-primary-gradient rounded-full opacity-30 blur-3xl -z-10 animate-pulse" />
+            
+            {/* Speech bubbles */}
+            <div className="absolute -top-4 -right-8 animate-float-speech">
+              <div className="bg-yellow-accent text-warm-brown px-3 py-2 rounded-lg text-sm font-medium shadow-lg relative">
+                Hello! 👋
+                <div className="absolute bottom-0 left-4 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-yellow-accent transform translate-y-full"></div>
+              </div>
+            </div>
+            
+            <div className="absolute -bottom-4 -left-8 animate-float-speech" style={{animationDelay: '1s'}}>
+              <div className="bg-orange-medium text-warm-brown px-3 py-2 rounded-lg text-sm font-medium shadow-lg relative">
+                Let's build! 🚀
+                <div className="absolute top-0 right-4 w-0 h-0 border-l-4 border-r-4 border-b-4 border-transparent border-b-orange-medium transform -translate-y-full"></div>
+              </div>
+            </div>
+            
+            {/* Enhanced Animated Code Elements */}
             <div className="absolute inset-0 pointer-events-none">
-              {/* Floating Code Snippets */}
-              <div className="absolute -top-8 -left-8 text-primary text-sm font-mono opacity-70 animate-bounce">
+              {/* Floating Code Snippets with orange theme */}
+              <div className="absolute -top-12 -left-12 text-primary text-lg font-mono font-bold opacity-80 animate-bounce">
                 &lt;/&gt;
               </div>
-              <div className="absolute -top-4 -right-12 text-primary text-xs font-mono opacity-60 animate-pulse">
-                {'{'}...{'}'}
+              <div className="absolute -top-8 -right-16 text-yellow-accent text-base font-mono opacity-70 animate-pulse">
+                {'{'}AI{'}'}
               </div>
-              <div className="absolute -bottom-6 -left-12 text-primary text-sm font-mono opacity-50 animate-bounce" style={{animationDelay: '0.5s'}}>
-                [ ]
+              <div className="absolute -bottom-10 -left-16 text-primary text-lg font-mono opacity-60 animate-bounce" style={{animationDelay: '0.5s'}}>
+                [ ML ]
               </div>
-              <div className="absolute -bottom-8 -right-8 text-primary text-xs font-mono opacity-70 animate-pulse" style={{animationDelay: '1s'}}>
-                ( )
+              <div className="absolute -bottom-12 -right-12 text-orange-medium text-base font-mono opacity-80 animate-pulse" style={{animationDelay: '1s'}}>
+                IoT( )
               </div>
               
-              {/* Orbiting Elements */}
+              {/* Enhanced Orbiting Elements */}
               <div className="absolute inset-0 animate-spin" style={{animationDuration: '20s'}}>
-                <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-primary rounded-full opacity-60"></div>
+                <div className="absolute -top-16 left-1/2 transform -translate-x-1/2 w-3 h-3 bg-primary rounded-full opacity-70 shadow-lg"></div>
               </div>
               <div className="absolute inset-0 animate-spin" style={{animationDuration: '15s', animationDirection: 'reverse'}}>
-                <div className="absolute top-1/2 -right-12 transform -translate-y-1/2 w-1.5 h-1.5 bg-accent rounded-full opacity-50"></div>
+                <div className="absolute top-1/2 -right-16 transform -translate-y-1/2 w-2 h-2 bg-yellow-accent rounded-full opacity-60"></div>
               </div>
               <div className="absolute inset-0 animate-spin" style={{animationDuration: '25s'}}>
-                <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-primary rounded-full opacity-40"></div>
+                <div className="absolute -bottom-16 left-1/2 transform -translate-x-1/2 w-3 h-3 bg-orange-medium rounded-full opacity-50"></div>
+              </div>
+              
+              {/* Sparkle effects */}
+              <div className="absolute -top-6 right-8 animate-ping">
+                <Sparkles className="w-4 h-4 text-yellow-accent" />
+              </div>
+              <div className="absolute -bottom-8 left-12 animate-ping" style={{animationDelay: '1.5s'}}>
+                <Sparkles className="w-3 h-3 text-primary" />
               </div>
             </div>
           </div>

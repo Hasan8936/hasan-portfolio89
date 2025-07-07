@@ -62,8 +62,10 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				'purple-light': 'hsl(var(--purple-light))',
-				'purple-medium': 'hsl(var(--purple-medium))',
+				'orange-light': 'hsl(var(--orange-light))',
+				'orange-medium': 'hsl(var(--orange-medium))',
+				'yellow-accent': 'hsl(var(--yellow-accent))',
+				'warm-brown': 'hsl(var(--warm-brown))',
 				success: 'hsl(var(--success))',
 				info: 'hsl(var(--info))'
 			},
@@ -95,17 +97,35 @@ export default {
 						transform: 'translateY(-10px)'
 					}
 				},
-				'matrix-rain': {
-					'0%': {
-						transform: 'translateY(-100px)',
-						opacity: '0'
+				'talk-bounce': {
+					'0%, 100%': {
+						transform: 'scale(1) translateY(0px)',
+						'animation-timing-function': 'cubic-bezier(0, 0, 0.2, 1)'
 					},
 					'50%': {
-						opacity: '1'
+						transform: 'scale(1.05) translateY(-5px)',
+						'animation-timing-function': 'cubic-bezier(0.8, 0, 1, 1)'
+					}
+				},
+				'speech-pulse': {
+					'0%, 100%': {
+						opacity: '0.6',
+						transform: 'scale(1)'
 					},
-					'100%': {
-						transform: 'translateY(100px)',
-						opacity: '0'
+					'50%': {
+						opacity: '1',
+						transform: 'scale(1.1)'
+					}
+				},
+				'float-speech': {
+					'0%, 100%': {
+						transform: 'translateY(0px) rotate(-2deg)'
+					},
+					'33%': {
+						transform: 'translateY(-8px) rotate(1deg)'
+					},
+					'66%': {
+						transform: 'translateY(-4px) rotate(-1deg)'
 					}
 				}
 			},
@@ -113,7 +133,9 @@ export default {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'code-float': 'code-float 3s ease-in-out infinite',
-				'matrix-rain': 'matrix-rain 2s linear infinite'
+				'talk-bounce': 'talk-bounce 2s ease-in-out infinite',
+				'speech-pulse': 'speech-pulse 1.5s ease-in-out infinite',
+				'float-speech': 'float-speech 4s ease-in-out infinite'
 			}
 		}
 	},
