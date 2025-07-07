@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
-import cartoonAvatar from "@/assets/cartoon-avatar.jpg";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -19,7 +18,7 @@ const Hero = () => {
           <div className="mb-8 relative">
             <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-primary shadow-2xl animate-pulse">
               <img 
-                src={cartoonAvatar} 
+                src="/lovable-uploads/e12f37b7-cd1c-4e62-8e0f-20cae018c2dc.png" 
                 alt="Nusaibul Hasan"
                 className="w-full h-full object-cover"
               />
