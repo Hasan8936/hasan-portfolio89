@@ -1,73 +1,53 @@
 
+Hasan Portfolio Craft
+This is my personal portfolio website showcasing my projects, skills, and professional profile. Built to serve as both an online resume and a creative space for experimenting with web development techniques.
 
-## Project info
+Features
+Responsive, modern design
+Portfolio project gallery
+About Me section
+Contact form
+Smooth animations and transitions
+SEO-friendly structure
+Technologies Used
+HTML5
+CSS3 (or SCSS / Tailwind CSS, if applicable)
+JavaScript
+[Framework/library if used, e.g. React, Vue, Next.js, etc.]
+[Other tools/plugins if used, e.g. GSAP for animations, EmailJS for contact form]
+Getting Started
+Clone the repository
 
-**URL**: https://lovable.dev/projects/07f10718-f2b3-4cbd-b1e2-63118876861e
+git clone https://github.com/your-username/hasan-portfolio-craft.git
 
-## How can I edit this code?
+Navigate into the project folder
 
-There are several ways of editing your application.
+cd hasan-portfolio-craft
 
-**Use Lovable**
+Install dependencies (if using a package manager)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/07f10718-f2b3-4cbd-b1e2-63118876861e) and start prompting.
+npm install
 
-Changes made via Lovable will be committed automatically to this repo.
+Run the development server
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+Or, simply open index.html in your browser if it’s a static project.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Folder Structure
+hasan-portfolio-craft/ ├── index.html ├── css/ │ └── styles.css ├── js/ │ └── script.js ├── images/ │ └── ... ├── assets/ │ └── ... └── README.txt
 
-**Use GitHub Codespaces**
+(Adjust folders to match your actual structure.)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Screenshots
+Uploading main.png…
 
-## What technologies are used for this project?
+[Add screenshots or GIFs here to showcase your website.]
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/07f10718-f2b3-4cbd-b1e2-63118876861e) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Contact
+Name: Hasan
+Email: [your-email@example.com]
+LinkedIn: [your-linkedin-link]
+Portfolio: https://hasan-portfolio-craft.lovable.app/
+License
+This project is open source under the MIT License.
